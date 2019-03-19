@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "label": "Start Development Server",
+      "type": "shell",
+      "cwd": "${workspaceFolder}",
+      "command": "sb",
+      "args": [
+        "run",
+        "${workspaceFolder}"
+      ]
+    },
+    {
+      "label": "Deploy App",
+      "type": "shell",
+      "cwd": "${workspaceFolder}",
+      "command": "sb",
+      "args": [
+        "deploy",
+        "${workspaceFolder}"
+      ]
+    }
+  ]
+}
