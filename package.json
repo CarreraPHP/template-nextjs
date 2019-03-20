@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8080"
+    "start": "next start -p $PORT"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
