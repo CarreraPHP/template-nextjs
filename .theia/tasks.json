@@ -1,23 +1,47 @@
 {
   "tasks": [
     {
-      "label": "Start Development Server",
+      "label": "start server",
       "type": "shell",
       "cwd": "${workspaceFolder}",
       "command": "sb",
       "args": [
+        "task",
         "run",
-        "${workspaceFolder}"
+        "start"
       ]
     },
     {
-      "label": "Deploy App",
+      "label": "gcloud build",
       "type": "shell",
       "cwd": "${workspaceFolder}",
       "command": "sb",
       "args": [
-        "deploy",
-        "${workspaceFolder}"
+        "task",
+        "run",
+        "build"
+      ]
+    },
+    {
+      "label": "gcloud deploy",
+      "type": "shell",
+      "cwd": "${workspaceFolder}",
+      "command": "sb",
+      "args": [
+        "task",
+        "run",
+        "deploy"
+      ]
+    },
+    {
+      "label": "gcloud build and deploy",
+      "type": "shell",
+      "cwd": "${workspaceFolder}",
+      "command": "sb",
+      "args": [
+        "task",
+        "run",
+        "build,deploy"
       ]
     }
   ]
