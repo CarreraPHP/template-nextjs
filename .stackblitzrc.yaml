@@ -1,7 +1,7 @@
 tasks:
   build:
-    - gcloud builds submit --tag gcr.io/stackblitz/prio-$STACKBLITZ_PROJECT_NAME
+    - gcloud builds submit --tag gcr.io/stackblitz/prio-$STACKBLITZ_PROJECT_SLUG
   deploy:
-    - gcloud beta run deploy prio-$STACKBLITZ_PROJECT_NAME --allow-unauthenticated --image gcr.io/stackblitz/prio-$STACKBLITZ_PROJECT_NAME --region us-central1
+    - gcloud beta run deploy prio-$STACKBLITZ_PROJECT_SLUG --allow-unauthenticated --image gcr.io/stackblitz/prio-$STACKBLITZ_PROJECT_SLUG --region us-central1
   start:
     - sb run -t $STACKBLITZ_PROJECT_SOURCE
