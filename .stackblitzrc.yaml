@@ -5,5 +5,11 @@ tasks:
   deploy:
     - gcloud config set project $GCP_PROJECT
     - gcloud beta run deploy prio-$STACKBLITZ_PROJECT_SLUG --allow-unauthenticated --image gcr.io/stackblitz/prio-$STACKBLITZ_PROJECT_SLUG --region us-central1
+  initialDeploy:
+    - gcloud config set project $GCP_PROJECT
+    - gcloud beta run deploy prio-$STACKBLITZ_PROJECT_SLUG --allow-unauthenticated --image gcr.io/stackblitz/template-nextjs --region us-central1
   start:
     - sb run
+images:
+  template:
+    name: gcr.io/stackblitz/template-nextjs
