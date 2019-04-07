@@ -47,7 +47,7 @@ function Index() {
         StackBlitz Template
       </Typography>
       <Typography variant="subtitle1" gutterBottom>
-        NestJS, Material-UI & TypeScript
+        NextJS, Material-UI & TypeScript
       </Typography>
       <Typography gutterBottom>
         <Link href="/about">
