@@ -4,8 +4,7 @@ function Index() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
-    </div>
+    <div>Hello, world</div>
   );
 }
 

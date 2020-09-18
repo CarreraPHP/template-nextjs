@@ -2,7 +2,7 @@ FROM node:11-alpine
 
 WORKDIR /workspace
 
-COPY package.json yarn.lock /workspace/
+COPY package.json /workspace/
 
 RUN yarn install
 

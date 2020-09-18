@@ -1,25 +1,19 @@
 {
   "name": "nextjs",
-  "version": "3.0.0",
-  "description": "NextJS, Material UI and TypeScript",
+  "version": "4.0.0",
+  "description": "NextJS",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jss": "10.0.0-alpha.3",
-    "next": "^9.0.3",
+    "jss": "^10.4.0",
+    "next": "^9.5.3",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@types/next": "^9.0.3",
-    "@types/react": "^16.7.17",
-    "@types/react-dom": "^16.0.11"
   }
 }
